@@ -1,0 +1,48 @@
+html{
+    background-color: bisque;
+}
+ul{
+    list-style: none;
+}
+header h1{
+    padding:10px;
+}
+#viewHighscore:hover{
+    cursor:pointer;
+}
+#firstScreen{
+    position:absolute;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:50px;
+    top:40%;
+    left:10%;
+    right:10%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#firstButton{
+    border-radius:10px;
+    margin:20px;
+}
+#firstButton:hover{
+    cursor:pointer;
+}
+
+#questionOne{
+    display:none;
+}
+#questionTwo{
+    display:none;
+}
+#highscoreTimer{
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+    font-size:30px;
+    font-family:'Courier New', Courier, monospace;
+}
+#timer{
+    padding-right:10px;
+}
