@@ -5,13 +5,16 @@
         <link rel="stylesheet" href="./assets/css/style.css">
         <title>How's your knowledge?</title>
         <meta name="viewport" content="width=device-width, initial scale=1.0">
-        <script src="script.js"></script>
     </head>
     <body>
-        <!-- This view highscore will stay on the screen permanently, may move position probably not -->
+        <!-- This view highscore will stay on the screen permanently, may move position, probably not -->
         <div id="highscoreTimer">
-            <h3><span id="viewHighscore">View Highscore</span></h3>
-            <h2>Timer:<span id="timer">0</span></h2>
+            <button id="viewHighscore"><h3>View Highscore<h3></button>
+            <h2>Timer:<span id="timer"></span></h2>
+            <div id="highscoreScreen">
+                <h1 id="highscoreNameScore">Your Highscore</h1>
+                <button id="closeHighscoreScreen">X</button>
+            </div>
         </div>
         <!-- This is the first screen the consumer will see -->
         <header id="firstScreen">
@@ -20,30 +23,44 @@
             <button id="firstButton">Click Here to Start!</button>
         </header>
         <section id="questionOne">
-            <h1>First Question!<br>How do you connect a css style sheet to the html?</h1>
+            <h1>First Question!</h1>
+            <h2>How do you connect a css style sheet to the html?</h2>
             <ul>
                 <li>Do you <strong>A</strong> link it in the header?</li>
                 <li>Does it <strong>B</strong> link automatically since it's in the same folder?</li>
                 <li>Do you <strong>C</strong> copy and paste?</li>
             </ul>
-            <input type="radio" name="questionOne" id="correctQuestionOne"/>
-            <label for="correctQuestionOne">A</label>
-            <input type="radio" name="questionOne" id="dummyQuestionTwo"/>
-            <label for="dummyQuestionTwo">B</label>
-            <input type="radio" name="questionOne" id="dummyQuestionThree"/>
-            <label for="dummyQuestionThree">C</label>
-            <input type="submit" name="questionOne"/>
+            <div id="questionOneSelections">
+                <input type="radio" name="questionOne" id="correctQuestionOne" value="A"/>
+                <label for="correctQuestionOne">A</label>
+                <input type="radio" name="questionOne" id="dummyQuestionTwo" value="B"/>
+                <label for="dummyQuestionTwo">B</label>
+                <input type="radio" name="questionOne" id="dummyQuestionThree" value="C"/>
+                <label for="dummyQuestionThree">C</label>
+                <input type="submit" name="questionOne" id="questionOneSubmit"/>
+            </div>
         </section>
         <section id="questionTwo">
             <h1>Second Question<br>How do you select a class in css?</h1>
             <ul>
-                <li>Do you <strong>A</strong>use a period (.)?</li>
-                <li>Do you <strong>B</strong>use the pound (#) sign?</li>
-                <li>Do you <strong>C</strong>just type the class name?</li>
+                <li>Do you <strong>A</strong> use a period (.)?</li>
+                <li>Do you <strong>B</strong> use the pound (#) sign?</li>
+                <li>Do you <strong>C</strong> just type the class name?</li>
             </ul>
-            <input type="radio" name="questionTwo" id="twoDummyQuestionOne"/>
-            <label for="twoCorrectQuestionOne">A</label>
-            <input type="radio" name="questionTwo" id="twoCorrectQuestionTwo"/>
-            <label for="twoDummyQuestionTwo">B</label>
-            <input type="radio" name="questionTwo" id="twoDummyQuestionThree"/>
-            <label for="twoDummyQuestionThree">C</label>
+            <div id="questionTwoSelections">
+                <input type="radio" name="questionTwo" id="twoDummyQuestionOne"/>
+                <label for="twoCorrectQuestionOne">A</label>
+                <input type="radio" name="questionTwo" id="twoCorrectQuestionTwo"/>
+                <label for="twoDummyQuestionTwo">B</label>
+                <input type="radio" name="questionTwo" id="twoDummyQuestionThree"/>
+                <label for="twoDummyQuestionThree">C</label>
+                <input type="submit" name="questionTwo" id="questionTwoSubmit"/>
+            </div>
+        </section>
+        <section id="nameForScore">
+            <input type="text" placeholder="Type your name here" id="highscoreName" name="highscoreName">
+            <input type="submit" id="submitName" name="highscoreName">
+        </section>
+        <footer>
+            <script src="script.js"></script>
+        </footer>
