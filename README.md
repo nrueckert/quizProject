@@ -9,8 +9,7 @@ Provide a short description explaining the what, why, and how of your project. U
 
 ## Usage
 
+### Navigate to https://nrueckert.github.io/quizProject/
 
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+    
+![Website with a timer, start button, and view highscore for a quiz](assets/images/e.png)
